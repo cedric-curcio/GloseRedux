@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GloseApplication</string>
+    <string name="gallery_author">par %1$s</string>
+    <string name="by">par</string>
+</resources>

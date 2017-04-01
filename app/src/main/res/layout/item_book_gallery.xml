@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    >
+
+    <RelativeLayout
+        android:id="@+id/item_book_cover_root"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/item_book_title"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:id="@+id/item_book_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/item_book_reader_list"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_book_title"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="12sp"
+        tools:text="Le tour du monde en 80 jours"
+        android:layout_below="@+id/item_book_cover_root"
+        />
+
+    <TextView
+        android:id="@+id/item_book_author"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_book_title"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/gallery_author"
+        android:textSize="12sp"
+        tools:text="par Jules Vernes"
+        />
+
+</RelativeLayout>
